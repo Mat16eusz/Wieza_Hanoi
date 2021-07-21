@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wieża Hanoi: Plik źródłowy C:/Users/Mateusz/Desktop/PWSZ/Programowanie w C++/II semestr_Jędrzej Byrski/Zadanie_12/Zadanie_12/Stos.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wieża Hanoi
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Wieża Hanoi wykonana na zaliczenie laboratorium programowanie C++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_519f0f2288044ee074d6f704205cd02a.html">Zadanie_12</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Stos.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_stos_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STOS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STOS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_stos.html">   18</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keyword">class </span><a class="code" href="class_stos.html">Stos</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_stos.html#a6cc38956f4febb9c0964a121900512aa">   21</a></span>&#160;    Typ* <a class="code" href="class_stos.html#a6cc38956f4febb9c0964a121900512aa">tablica</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">   22</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_stos.html#a7489c03130fb3a835e7d3409af6d4262">   24</a></span>&#160;    <a class="code" href="class_stos.html#a7489c03130fb3a835e7d3409af6d4262">Stos</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_stos.html#a3564a029f97c3504308a0169eff3e048">   25</a></span>&#160;    <a class="code" href="class_stos.html#a3564a029f97c3504308a0169eff3e048">Stos</a>(<span class="keyword">const</span> <a class="code" href="class_stos.html">Stos</a>&amp; Obiekt);</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_stos.html#a7e4bbd6b930b18758d5e69b87d21bdfc">   26</a></span>&#160;    <a class="code" href="class_stos.html#a7e4bbd6b930b18758d5e69b87d21bdfc">~Stos</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_stos.html#ac279d68b36be0235329b94b6294ef509">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_stos.html#ac279d68b36be0235329b94b6294ef509">poloz_na_stos</a>(Typ na_stos);</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_stos.html#a1ddd11d556517946010a654d4aa5ca4e">   29</a></span>&#160;    Typ <a class="code" href="class_stos.html#a1ddd11d556517946010a654d4aa5ca4e">zdejmij_z_wierzchu</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_stos.html#a4efb9de4e61e24fd4ebde2d006e8616d">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_stos.html#a4efb9de4e61e24fd4ebde2d006e8616d">oproznij</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_stos.html#a3017526e2c160ee7672a5561d314e573">   31</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stos.html#a3017526e2c160ee7672a5561d314e573">czy_pusty</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_stos.html#a16a1aee1930e3838ef3ac46aa8addc0e">   32</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_stos.html#a16a1aee1930e3838ef3ac46aa8addc0e">pobierz_rozmiar</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_stos.html#acfaec9ac6c8ea73d0f74b99bef14243e">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_stos.html#acfaec9ac6c8ea73d0f74b99bef14243e">wyswietl_stos</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_stos.html#af664b7d3834be972cf8f772feeb2aabd">   34</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stos.html#af664b7d3834be972cf8f772feeb2aabd">sprawdz_wielkosc_ostatniego_elementu</a>(<a class="code" href="class_stos.html">Stos</a>&amp; Obiekt_1, <a class="code" href="class_stos.html">Stos</a>&amp; Obiekt_2);</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_stos.html#a83f683a34d4dbacd513802ef7eba1f07">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_stos.html#a83f683a34d4dbacd513802ef7eba1f07">zamien</a>(<a class="code" href="class_stos.html">Stos</a>&amp; Obiekt_1, <a class="code" href="class_stos.html">Stos</a>&amp; Obiekt_2);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_stos.html#a7489c03130fb3a835e7d3409af6d4262">   41</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <a class="code" href="class_stos.html#a7489c03130fb3a835e7d3409af6d4262">Stos&lt;Typ&gt;::Stos</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    this-&gt;tablica = NULL;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    this-&gt;rozmiar = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_stos.html#a3564a029f97c3504308a0169eff3e048">   51</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <a class="code" href="class_stos.html#a7489c03130fb3a835e7d3409af6d4262">Stos&lt;Typ&gt;::Stos</a>(<span class="keyword">const</span> <a class="code" href="class_stos.html">Stos</a>&amp; Obiekt)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    this-&gt;rozmiar = Obiekt.<a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    this-&gt;tablica = <span class="keyword">new</span> Typ[rozmiar];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    memcpy(&amp;this-&gt;tablica[0], &amp;Obiekt.<a class="code" href="class_stos.html#a6cc38956f4febb9c0964a121900512aa">tablica</a>[0], Obiekt.<a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a> * <span class="keyword">sizeof</span>(Typ));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_stos.html#a7e4bbd6b930b18758d5e69b87d21bdfc">   63</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <a class="code" href="class_stos.html#a7e4bbd6b930b18758d5e69b87d21bdfc">Stos&lt;Typ&gt;::~Stos</a>()</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">delete</span>[] this-&gt;tablica;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    this-&gt;tablica = NULL;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_stos.html#ac279d68b36be0235329b94b6294ef509">   77</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keywordtype">void</span> <a class="code" href="class_stos.html#ac279d68b36be0235329b94b6294ef509">Stos&lt;Typ&gt;::poloz_na_stos</a>(Typ na_stos)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    Typ* tablica_tymczasowa = <span class="keyword">new</span> Typ[this-&gt;rozmiar];</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    memcpy(&amp;tablica_tymczasowa[0], &amp;this-&gt;tablica[0], this-&gt;rozmiar * <span class="keyword">sizeof</span>(Typ));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">delete</span>[] this-&gt;tablica;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    this-&gt;rozmiar++;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    this-&gt;tablica = <span class="keyword">new</span> Typ[this-&gt;rozmiar];</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    memcpy(&amp;this-&gt;tablica[0], &amp;tablica_tymczasowa[0], this-&gt;rozmiar * <span class="keyword">sizeof</span>(Typ));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    this-&gt;tablica[this-&gt;rozmiar - 1] = na_stos;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">delete</span>[] tablica_tymczasowa;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    tablica_tymczasowa = NULL;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_stos.html#a1ddd11d556517946010a654d4aa5ca4e">  102</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; Typ <a class="code" href="class_stos.html#a1ddd11d556517946010a654d4aa5ca4e">Stos&lt;Typ&gt;::zdejmij_z_wierzchu</a>()</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (czy_pusty())</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">throw</span> this-&gt;rozmiar;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        this-&gt;rozmiar--;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        Typ ostatni = this-&gt;tablica[this-&gt;rozmiar];</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        Typ* tablica_tymczasowa = <span class="keyword">new</span> Typ[this-&gt;rozmiar];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        memcpy(&amp;tablica_tymczasowa[0], &amp;this-&gt;tablica[0], this-&gt;rozmiar * <span class="keyword">sizeof</span>(Typ));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">delete</span>[] this-&gt;tablica;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        this-&gt;tablica = <span class="keyword">new</span> Typ[this-&gt;rozmiar];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        memcpy(&amp;this-&gt;tablica[0], &amp;tablica_tymczasowa[0], this-&gt;rozmiar * <span class="keyword">sizeof</span>(Typ));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">delete</span>[] tablica_tymczasowa;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        tablica_tymczasowa = NULL;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> ostatni;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_stos.html#a4efb9de4e61e24fd4ebde2d006e8616d">  133</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keywordtype">void</span> <a class="code" href="class_stos.html#a4efb9de4e61e24fd4ebde2d006e8616d">Stos&lt;Typ&gt;::oproznij</a>()</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">while</span> (this-&gt;rozmiar != 0)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        zdejmij_z_wierzchu();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="class_stos.html#a3017526e2c160ee7672a5561d314e573">  145</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keywordtype">bool</span> <a class="code" href="class_stos.html#a3017526e2c160ee7672a5561d314e573">Stos&lt;Typ&gt;::czy_pusty</a>()</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">if</span> (this-&gt;rozmiar == 0)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="class_stos.html#a16a1aee1930e3838ef3ac46aa8addc0e">  159</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keywordtype">unsigned</span> <a class="code" href="class_stos.html#a16a1aee1930e3838ef3ac46aa8addc0e">Stos&lt;Typ&gt;::pobierz_rozmiar</a>()</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> this-&gt;rozmiar;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="class_stos.html#acfaec9ac6c8ea73d0f74b99bef14243e">  167</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keywordtype">void</span> <a class="code" href="class_stos.html#acfaec9ac6c8ea73d0f74b99bef14243e">Stos&lt;Typ&gt;::wyswietl_stos</a>()</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this-&gt;rozmiar; i++)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        cout &lt;&lt; this-&gt;tablica[i] &lt;&lt; endl;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="class_stos.html#af664b7d3834be972cf8f772feeb2aabd">  181</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keywordtype">bool</span> <a class="code" href="class_stos.html#af664b7d3834be972cf8f772feeb2aabd">Stos&lt;Typ&gt;::sprawdz_wielkosc_ostatniego_elementu</a>(<a class="code" href="class_stos.html">Stos</a>&amp; Obiekt_1, <a class="code" href="class_stos.html">Stos</a>&amp; Obiekt_2)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">if</span> (Obiekt_1.<a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a> == 0 &amp;&amp; Obiekt_2.<a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a> == 0)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">if</span> (Obiekt_2.<a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a> == 0)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span> (Obiekt_1.<a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a> == 0)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span> (Obiekt_1.<a class="code" href="class_stos.html#a6cc38956f4febb9c0964a121900512aa">tablica</a>[Obiekt_1.<a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a> - 1] &lt; Obiekt_2.<a class="code" href="class_stos.html#a6cc38956f4febb9c0964a121900512aa">tablica</a>[Obiekt_2.<a class="code" href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">rozmiar</a> - 1])</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_stos.html#a83f683a34d4dbacd513802ef7eba1f07">  208</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keywordtype">void</span> <a class="code" href="class_stos.html#a83f683a34d4dbacd513802ef7eba1f07">Stos&lt;Typ&gt;::zamien</a>(<a class="code" href="class_stos.html">Stos</a>&amp; Obiekt_1, <a class="code" href="class_stos.html">Stos</a>&amp; Obiekt_2)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    Obiekt_2.<a class="code" href="class_stos.html#ac279d68b36be0235329b94b6294ef509">poloz_na_stos</a>(Obiekt_1.<a class="code" href="class_stos.html#a1ddd11d556517946010a654d4aa5ca4e">zdejmij_z_wierzchu</a>());</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_stos_html"><div class="ttname"><a href="class_stos.html">Stos</a></div><div class="ttdoc">Reprezentacja stosu.</div><div class="ttdef"><b>Definition:</b> Stos.h:19</div></div>
+<div class="ttc" id="aclass_stos_html_a16a1aee1930e3838ef3ac46aa8addc0e"><div class="ttname"><a href="class_stos.html#a16a1aee1930e3838ef3ac46aa8addc0e">Stos::pobierz_rozmiar</a></div><div class="ttdeci">unsigned pobierz_rozmiar()</div><div class="ttdoc">Funkcja zwracająca rozmiar tablicy obiektu.</div><div class="ttdef"><b>Definition:</b> Stos.h:159</div></div>
+<div class="ttc" id="aclass_stos_html_a1ddd11d556517946010a654d4aa5ca4e"><div class="ttname"><a href="class_stos.html#a1ddd11d556517946010a654d4aa5ca4e">Stos::zdejmij_z_wierzchu</a></div><div class="ttdeci">Typ zdejmij_z_wierzchu()</div><div class="ttdoc">Funkcja zdejmuje ze szczytu wartość element.</div><div class="ttdef"><b>Definition:</b> Stos.h:102</div></div>
+<div class="ttc" id="aclass_stos_html_a3017526e2c160ee7672a5561d314e573"><div class="ttname"><a href="class_stos.html#a3017526e2c160ee7672a5561d314e573">Stos::czy_pusty</a></div><div class="ttdeci">bool czy_pusty()</div><div class="ttdoc">Funkcja sprawdzająca czy stos jest pusty.</div><div class="ttdef"><b>Definition:</b> Stos.h:145</div></div>
+<div class="ttc" id="aclass_stos_html_a3564a029f97c3504308a0169eff3e048"><div class="ttname"><a href="class_stos.html#a3564a029f97c3504308a0169eff3e048">Stos::Stos</a></div><div class="ttdeci">Stos(const Stos &amp;Obiekt)</div><div class="ttdoc">Konstruktor kopiujący obiekt klasy szablonowej Stos.</div><div class="ttdef"><b>Definition:</b> Stos.h:51</div></div>
+<div class="ttc" id="aclass_stos_html_a4efb9de4e61e24fd4ebde2d006e8616d"><div class="ttname"><a href="class_stos.html#a4efb9de4e61e24fd4ebde2d006e8616d">Stos::oproznij</a></div><div class="ttdeci">void oproznij()</div><div class="ttdoc">Funkcja opróżniająca cały stos.</div><div class="ttdef"><b>Definition:</b> Stos.h:133</div></div>
+<div class="ttc" id="aclass_stos_html_a538a75b18d0d768452d841820dc5c62a"><div class="ttname"><a href="class_stos.html#a538a75b18d0d768452d841820dc5c62a">Stos::rozmiar</a></div><div class="ttdeci">unsigned rozmiar</div><div class="ttdef"><b>Definition:</b> Stos.h:22</div></div>
+<div class="ttc" id="aclass_stos_html_a6cc38956f4febb9c0964a121900512aa"><div class="ttname"><a href="class_stos.html#a6cc38956f4febb9c0964a121900512aa">Stos::tablica</a></div><div class="ttdeci">Typ * tablica</div><div class="ttdef"><b>Definition:</b> Stos.h:21</div></div>
+<div class="ttc" id="aclass_stos_html_a7489c03130fb3a835e7d3409af6d4262"><div class="ttname"><a href="class_stos.html#a7489c03130fb3a835e7d3409af6d4262">Stos::Stos</a></div><div class="ttdeci">Stos()</div><div class="ttdoc">Konstruktor domyślny ustawiający rozmiar na 0 a wskażnik tablicy na NULL.</div><div class="ttdef"><b>Definition:</b> Stos.h:41</div></div>
+<div class="ttc" id="aclass_stos_html_a7e4bbd6b930b18758d5e69b87d21bdfc"><div class="ttname"><a href="class_stos.html#a7e4bbd6b930b18758d5e69b87d21bdfc">Stos::~Stos</a></div><div class="ttdeci">~Stos()</div><div class="ttdoc">Destruktor zwalniający pamięć obiektu klasy szablonowej.</div><div class="ttdef"><b>Definition:</b> Stos.h:63</div></div>
+<div class="ttc" id="aclass_stos_html_a83f683a34d4dbacd513802ef7eba1f07"><div class="ttname"><a href="class_stos.html#a83f683a34d4dbacd513802ef7eba1f07">Stos::zamien</a></div><div class="ttdeci">void zamien(Stos &amp;Obiekt_1, Stos &amp;Obiekt_2)</div><div class="ttdoc">Funkcja zamieniająca element ze szczytu obiektu na szczyt drugiego obiektu.</div><div class="ttdef"><b>Definition:</b> Stos.h:208</div></div>
+<div class="ttc" id="aclass_stos_html_ac279d68b36be0235329b94b6294ef509"><div class="ttname"><a href="class_stos.html#ac279d68b36be0235329b94b6294ef509">Stos::poloz_na_stos</a></div><div class="ttdeci">void poloz_na_stos(Typ na_stos)</div><div class="ttdoc">Funkcja kładzie element na szczyt stosu.</div><div class="ttdef"><b>Definition:</b> Stos.h:77</div></div>
+<div class="ttc" id="aclass_stos_html_acfaec9ac6c8ea73d0f74b99bef14243e"><div class="ttname"><a href="class_stos.html#acfaec9ac6c8ea73d0f74b99bef14243e">Stos::wyswietl_stos</a></div><div class="ttdeci">void wyswietl_stos()</div><div class="ttdoc">Funkcja wyświetlająca wartości z całego stosu.</div><div class="ttdef"><b>Definition:</b> Stos.h:167</div></div>
+<div class="ttc" id="aclass_stos_html_af664b7d3834be972cf8f772feeb2aabd"><div class="ttname"><a href="class_stos.html#af664b7d3834be972cf8f772feeb2aabd">Stos::sprawdz_wielkosc_ostatniego_elementu</a></div><div class="ttdeci">bool sprawdz_wielkosc_ostatniego_elementu(Stos &amp;Obiekt_1, Stos &amp;Obiekt_2)</div><div class="ttdoc">Funkcja sprwdzająca kolejność położenia na stosie.</div><div class="ttdef"><b>Definition:</b> Stos.h:181</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
